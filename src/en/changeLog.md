@@ -10,3 +10,4 @@
 - recently update
 - Add a sparkle effect to the project homepage
 - Move the blogger information to the left side of the article list
+- Add a bouncing effect to the page icons on hover

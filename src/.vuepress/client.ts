@@ -4,6 +4,7 @@ import { setupRunningTimeFooter } from "vuepress-theme-hope/presets/footerRunnin
 import { setupSnowFall } from "vuepress-theme-hope/presets/snowFall.js";
 import "vuepress-theme-hope/presets/shinning-feature-panel.scss";
 import "vuepress-theme-hope/presets/left-blog-info.scss";
+import "vuepress-theme-hope/presets/bounce-icon.scss";
 
 
 export default defineClientConfig({
