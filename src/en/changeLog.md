@@ -9,3 +9,4 @@
 - Add a snow effect
 - recently update
 - Add a sparkle effect to the project homepage
+- Move the blogger information to the left side of the article list
