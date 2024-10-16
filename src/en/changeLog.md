@@ -5,3 +5,4 @@
 - Replace the blog homepage background with the Bing daily wallpaper
 - Replace the blog homepage description with a random ichigo-ichie phrase
 - Make the navigation bar transparent when at the top of specific pages
+- Add runtime to the blog
