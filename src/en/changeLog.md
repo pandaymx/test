@@ -12,3 +12,4 @@
 - Move the blogger information to the left side of the article list
 - Add a bouncing effect to the page icons on hover
 - Add a driving car icon to all `<hr>` elements
+- Highlight code blocks using PrismJS and set a default code theme
