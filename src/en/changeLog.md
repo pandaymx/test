@@ -8,3 +8,4 @@
 - Add runtime to the blog
 - Add a snow effect
 - recently update
+- Add a sparkle effect to the project homepage
