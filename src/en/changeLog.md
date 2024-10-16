@@ -7,3 +7,4 @@
 - Make the navigation bar transparent when at the top of specific pages
 - Add runtime to the blog
 - Add a snow effect
+- recently update

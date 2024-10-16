@@ -3,6 +3,8 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
+import { getRecentUpdatedArticles } from "vuepress-theme-hope/presets/getRecentUpdatedArticles.js";
+
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
@@ -118,7 +120,16 @@ export default hopeTheme({
   // hotReload: true,
 
   plugins: {
-    blog: true,
+    blog: {
+      type: [
+        getRecentUpdatedArticles({
+          locales: {
+            "/en/": "Recent Updated",
+            "/": "最近更新",
+          },
+        }),
+      ],
+    },
 
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
@@ -267,4 +278,4 @@ export default hopeTheme({
     //   plugins: ["highlight", "math", "search", "notes", "zoom"],
     // },
   },
-},{custom: true});
+}, { custom: true });
