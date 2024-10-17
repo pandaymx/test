@@ -1,3 +1,6 @@
+---
+title: ChangeLog
+---
 ## 2024-10-17
 
 - Fix the PrismJS issue
@@ -5,6 +8,7 @@
 - Enable hot reload
 - Add a theme color selection feature and include some colors
 - Add fullscreen functionality
+- Add a personal political statement at the beginning of the page
 
 ## 2024-10-16
 

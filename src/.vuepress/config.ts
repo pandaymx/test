@@ -1,8 +1,7 @@
 import { getDirname, path } from "vuepress/utils";
-import { defineUserConfig, PluginObject } from "vuepress";
+import { defineUserConfig } from "vuepress";
 
 import theme from "./theme.js";
-import { prismjs } from "vuepress-theme-hope";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -25,6 +24,10 @@ export default defineUserConfig({
     "@theme-hope/modules/blog/components/BlogHero": path.resolve(
       __dirname,
       "./components/BlogHero.vue",
+    ),
+    "@theme-hope/components/NormalPage": path.resolve(
+      __dirname,
+      "./components/Normal.vue",
     ),
   },
   theme,
