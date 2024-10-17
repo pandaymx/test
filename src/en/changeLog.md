@@ -4,6 +4,7 @@
 - Add a feature to check for dead links in Markdown
 - Enable hot reload
 - Add a theme color selection feature and include some colors
+- Add fullscreen functionality
 
 ## 2024-10-16
 

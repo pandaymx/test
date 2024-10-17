@@ -108,7 +108,7 @@ export default hopeTheme({
       },
     },
   },
-
+  fullscreen: true,
   encrypt: {
     config: {
       "/en/demo/encrypt.html": ["1234"],
