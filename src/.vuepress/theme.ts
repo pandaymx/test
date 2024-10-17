@@ -130,7 +130,12 @@ export default hopeTheme({
         }),
       ],
     },
-
+    prismjs: {
+      themes: {
+        light: "vs",
+        dark: "one-dark"
+      }
+    }
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.

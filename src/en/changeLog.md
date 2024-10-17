@@ -1,3 +1,7 @@
+## 2024-10-17
+
+- Fix the PrismJS issue
+
 ## 2024-10-16
 
 - Change the document address for both Chinese and English
@@ -13,3 +17,4 @@
 - Add a bouncing effect to the page icons on hover
 - Add a driving car icon to all `<hr>` elements
 - Highlight code blocks using PrismJS and set a default code theme
+- Add a feature to check for dead links in Markdown

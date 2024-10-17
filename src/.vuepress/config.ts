@@ -1,9 +1,8 @@
 import { getDirname, path } from "vuepress/utils";
-import { defineUserConfig } from "vuepress";
+import { defineUserConfig, PluginObject } from "vuepress";
 
 import theme from "./theme.js";
 import { prismjs } from "vuepress-theme-hope";
-import { isLinkExternal } from "vuepress/shared";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -29,14 +28,6 @@ export default defineUserConfig({
     ),
   },
   theme,
-  plugins: [
-    prismjs({
-      themes: {
-        light: "material-light",
-        dark: "one-dark",
-      }
-    })
-  ]
   // Enable it with pwa
   // shouldPrefetch: false,
 });
