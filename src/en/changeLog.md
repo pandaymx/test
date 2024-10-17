@@ -1,5 +1,6 @@
 ---
 title: ChangeLog
+icon: /assets/icon/changeLog.svg
 ---
 ## 2024-10-17
 
@@ -14,6 +15,8 @@ title: ChangeLog
 - Add Cookie support
 - Store hidden values in browser cookies
 - Add a donation QR code
+- Add icons to the changelog
+
 
 ## 2024-10-16
 

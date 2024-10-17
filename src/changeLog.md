@@ -1,5 +1,6 @@
 ---
 title: 更新历史
+icon: /assets/icon/changeLog.svg
 ---
 
 ## 2024-10-17
