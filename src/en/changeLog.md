@@ -12,6 +12,7 @@ title: ChangeLog
 - Add follow request information at the end of the page and add buttons to control the visibility of other sections
 - Add a disclaimer and liability clause before the content
 - Add Cookie support
+- Store hidden values in browser cookies
 
 ## 2024-10-16
 

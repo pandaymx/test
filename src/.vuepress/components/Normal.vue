@@ -1,10 +1,37 @@
 <script setup lang="ts">
 import NormalPage from "vuepress-theme-hope/components/NormalPage.js"
-import { ref } from 'vue';
+import { ref, onMounted, watch } from 'vue';
+import Cookies from 'js-cookie';
 
-const showTop = ref(true);
-const showBottom = ref(true);
-const showContentBefore =ref(true)
+const showTop = ref(Cookies.get('showTop') === 'true');
+const showBottom = ref(Cookies.get('showBottom') === 'true');
+const showContentBefore = ref(Cookies.get('showContentBefore') === 'true');
+
+const toggleTop = () => {
+  showTop.value = !showTop.value;
+};
+const toggleBottom = () => {
+  showBottom.value = !showBottom.value;
+};
+const toggleContentBefore = () => {
+  showContentBefore.value = !showContentBefore.value;
+};
+
+watch(showTop, (newValue) => {
+  Cookies.set('showTop', newValue, { expires: 7 });
+});
+watch(showBottom, (newValue) => {
+  Cookies.set('showBottom', newValue, { expires: 7 });
+});
+watch(showContentBefore, (newValue) => {
+  Cookies.set('showContentBefore', newValue, { expires: 7 });
+});
+
+onMounted(() => {
+  showTop.value = Cookies.get('showTop') === 'true';
+  showBottom.value = Cookies.get('showBottom') === 'true';
+  showContentBefore.value = Cookies.get('showContentBefore') === 'true';
+});
 </script>
 
 <template>
