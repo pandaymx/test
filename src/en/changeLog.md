@@ -2,6 +2,7 @@
 
 - Fix the PrismJS issue
 - Add a feature to check for dead links in Markdown
+- Enable hot reload
 
 ## 2024-10-16
 
