@@ -1,6 +1,7 @@
 ## 2024-10-17
 
 - Fix the PrismJS issue
+- Add a feature to check for dead links in Markdown
 
 ## 2024-10-16
 

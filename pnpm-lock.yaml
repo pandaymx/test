@@ -11,6 +11,9 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.17
         version: 2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5)
+      '@vuepress/plugin-links-check':
+        specifier: 2.0.0-rc.55
+        version: 2.0.0-rc.55(vuepress@2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5))(vue@3.5.12))
       '@vuepress/plugin-prismjs':
         specifier: 2.0.0-rc.55
         version: 2.0.0-rc.55(@vueuse/core@11.1.0(vue@3.5.12))(vuepress@2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5))(vue@3.5.12))
@@ -767,6 +770,11 @@ packages:
     resolution: {integrity: sha512-peu3Fzv/TNb+rpiNByKfbira79sR8vGVpF8u9mZXgM/xsQH5IvO0g7Zgwub8fkoIxsNjEN2SnA0k3bCbOWGUgw==}
     peerDependencies:
       vuepress: 2.0.0-rc.17
+
+  '@vuepress/plugin-links-check@2.0.0-rc.55':
+    resolution: {integrity: sha512-OJzxBMo3auYmEBoix9c8O41AtePEJgZ8QlWTOcvtlQ7Ls9KLr0Xbh4Ki4lTimHxEw256hwwnRFzWCpRZs6dgcw==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.18
 
   '@vuepress/plugin-markdown-hint@2.0.0-rc.52':
     resolution: {integrity: sha512-8c3RVFvjh9ntgmqpU3ZWiolCMIBcKZXmd4utTU9EGBaNeIBGtdGyY2dYhbMkR89/OUBP1NfEtuSTNa2PkVW9Cg==}
@@ -2807,6 +2815,14 @@ snapshots:
   '@vuepress/plugin-links-check@2.0.0-rc.52(vuepress@2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5))(vue@3.5.12))':
     dependencies:
       '@vuepress/helper': 2.0.0-rc.52(vuepress@2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5))(vue@3.5.12))
+      vuepress: 2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5))(vue@3.5.12)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - typescript
+
+  '@vuepress/plugin-links-check@2.0.0-rc.55(vuepress@2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5))(vue@3.5.12))':
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.55(vuepress@2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5))(vue@3.5.12))
       vuepress: 2.0.0-rc.17(@vuepress/bundler-vite@2.0.0-rc.17(@types/node@22.7.5)(sass-embedded@1.79.5))(vue@3.5.12)
     transitivePeerDependencies:
       - '@vue/composition-api'
