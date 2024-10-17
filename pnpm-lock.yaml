@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      js-cookie:
+        specifier: ^3.0.5
+        version: 3.0.5
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.17
@@ -1280,6 +1284,10 @@ packages:
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+
+  js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
+    engines: {node: '>=14'}
 
   js-yaml@3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
@@ -3450,6 +3458,8 @@ snapshots:
   is-what@4.1.16: {}
 
   isexe@2.0.0: {}
+
+  js-cookie@3.0.5: {}
 
   js-yaml@3.14.1:
     dependencies:
