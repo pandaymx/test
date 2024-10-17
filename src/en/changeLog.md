@@ -9,6 +9,7 @@ title: ChangeLog
 - Add a theme color selection feature and include some colors
 - Add fullscreen functionality
 - Add a personal political statement at the beginning of the page
+- Add follow request information at the end of the page and add buttons to control the visibility of other sections
 
 ## 2024-10-16
 
