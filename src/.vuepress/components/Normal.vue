@@ -4,6 +4,7 @@ import { ref } from 'vue';
 
 const showTop = ref(true);
 const showBottom = ref(true);
+const showContentBefore =ref(true)
 </script>
 
 <template>
@@ -14,11 +15,17 @@ const showBottom = ref(true);
                 应当限制在局部范围，不应当转变为世界大战。香港 🇭🇰、台湾 🇹🇼、琉球 🏝️ 是中国不可分割的一部分 🇨🇳，南海 🌊 是中国内海，国外不应当随意进行开发。
             </p>
         </template>
+        <template v-if="showContentBefore" #contentBefore>
+            <p class="content">
+                文档的一切内容仅供参考，我会尽量保证内容为最新的内容，过时内容可能不会进行收录和整理。文档不允许任何个人或组织进行牟利，违者我也查不到。
+            </p>
+        </template>
         <template #bottom>
             <p  v-if="showBottom" class="content">
                 如果你看到了这里，那么请给我一个评论，在 Bilibili 或抖音给我一个关注吧。
             </p>
             <button @click="showTop = !showTop">{{ showTop ? '隐藏' : '显示' }} 顶部信息</button>
+            <button @click="showContentBefore = !showContentBefore">{{ showContentBefore ? '隐藏' : '显示' }} 内容信息</button>
             <button @click="showBottom = !showBottom">{{ showBottom ? '隐藏' : '显示' }} 底部信息</button>
         </template>
     </NormalPage>
