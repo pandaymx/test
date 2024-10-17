@@ -13,6 +13,7 @@ title: ChangeLog
 - Add a disclaimer and liability clause before the content
 - Add Cookie support
 - Store hidden values in browser cookies
+- Add a donation QR code
 
 ## 2024-10-16
 

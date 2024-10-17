@@ -47,6 +47,9 @@ onMounted(() => {
                 文档的一切内容仅供参考，我会尽量保证内容为最新的内容，过时内容可能不会进行收录和整理。文档不允许任何个人或组织进行牟利，违者我也查不到。
             </p>
         </template>
+        <template #contentAfter>
+            <img src="/wxDonation.jpg" alt="微信赞赏码" class="responsive-img"/>
+        </template>
         <template #bottom>
             <p  v-if="showBottom" class="content">
                 如果你看到了这里，那么请给我一个评论，在 Bilibili 或抖音给我一个关注吧。
@@ -83,4 +86,13 @@ button {
 button:hover {
   background-color: #45a049
 }
+
+.responsive-img {
+    width: 30%; /* Adjust width to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 可选：添加阴影 */
+    display: block; /* 使图片成为块级元素 */
+    margin-left: auto; /* 左边距自动 */
+    margin-right: auto; /* 右边距自动 */
+  }
 </style>
