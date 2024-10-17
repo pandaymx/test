@@ -20,10 +20,17 @@ jobs:
           # 如果你文档需要 Git 子模块，取消注释下一行
           # submodules: true
 
+      - name: Get and modify packageManager value
+        id: modify-pm
+        run: |
+          PACKAGE_MANAGER=$(jq -r '.packageManager' package.json)
+          MODIFIED_PACKAGE_MANAGER=${PACKAGE_MANAGER:5}
+          echo "MODIFIED_PACKAGE_MANAGER=$MODIFIED_PACKAGE_MANAGER" >> $GITHUB_ENV
+
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: ${{ env.MODIFIED_PACKAGE_MANAGER }}
 
 
       - name: 设置 Node.js
